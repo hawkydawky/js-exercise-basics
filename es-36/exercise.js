@@ -1,11 +1,11 @@
-function canPlay() {
-  let sport = " Football";
+let sport = " Football";
 
+function canPlay() {
   if (true) {
-    let personName = "Cosimo";
+    this.personName = "Cosimo";
   }
 
-  console.log(personName + sport);
+  console.log(this.personName + sport);
 }
 
 canPlay();
