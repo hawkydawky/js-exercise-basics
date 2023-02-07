@@ -3,7 +3,11 @@ let user = {
   age: 30,
 };
 
-let newUser = user;
+let newUser = {};
+
+for (const i in user) {
+  newUser[i] = user[i];
+}
 
 newUser.name = "Paolo";
 
