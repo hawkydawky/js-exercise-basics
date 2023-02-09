@@ -1,5 +1,8 @@
 function uncompletedNotes(notes) {
-  // ...
+  let arr1 = arr2 = [];
+  notes.forEach((note) => arr1.push(note.todos));
+  arr1.forEach((st1) => st1.forEach((st2) => arr2.push(st2)));
+  arr2.filter((st3) => st3.done === false).forEach((st4) => console.log(st4));
 }
 
 const notes = [
@@ -53,3 +56,4 @@ const notes = [
 ];
 
 uncompletedNotes(notes);
+
